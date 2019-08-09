@@ -1,9 +1,13 @@
 package com.lambdaschool.android.organization.application
 
 import android.app.Application
+import com.lambdaschool.android.organization.model.Product
 
 class LambdaApplication : Application() {
     // todo: Maybe define a model in this class?
+
+    public val appProduct = Product(productName = "Shampoo")
+
 
     override fun onCreate() {
         super.onCreate()

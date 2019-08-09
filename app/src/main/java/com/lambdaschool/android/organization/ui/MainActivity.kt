@@ -3,6 +3,7 @@ package com.lambdaschool.android.organization.ui
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.lambdaschool.android.organization.R
+import com.lambdaschool.android.organization.application.LambdaApplication
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         title = "Product Details"
         setContentView(R.layout.activity_main)
+
         displayProductDetails()
     }
 
