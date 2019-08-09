@@ -1,5 +1,6 @@
 package com.lambdaschool.android.organization.util
 
+import com.lambdaschool.android.organization.model.Product
 import java.text.NumberFormat
 
 class TextUtils {
@@ -13,5 +14,10 @@ class TextUtils {
         fun formatPercent(discount : Double) : String {
             return "${NumberFormat.getPercentInstance().format(discount)} discount"
         }
+
+        fun formatProduct(name: String , product: String): String {
+            return "$name , $product"
+        }
+
     }
 }

@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.lambdaschool.android.organization.R
 import com.lambdaschool.android.organization.application.LambdaApplication
 import com.lambdaschool.android.organization.model.Product
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayProductDetails(product: Product) {
+
+        productName.text =
 
 
         // todo: Instantiate a Product, set its characteristics, and
