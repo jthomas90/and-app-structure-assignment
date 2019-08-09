@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.lambdaschool.android.organization.R
 import com.lambdaschool.android.organization.application.LambdaApplication
+import com.lambdaschool.android.organization.model.Product
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         title = "Product Details"
         setContentView(R.layout.activity_main)
 
-        displayProductDetails()
+        displayProductDetails((application as LambdaApplication).appProduct)
     }
 
-    private fun displayProductDetails() {
+    private fun displayProductDetails(product: Product) {
+
+
         // todo: Instantiate a Product, set its characteristics, and
         // set each of the fields on the corresponding TextViews from the layout
         // use the appropriate Util methods for formatting the fields
